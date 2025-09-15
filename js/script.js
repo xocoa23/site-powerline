@@ -258,15 +258,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, 5000); // Troca a cada 5 segundos
     
-    // Header transparente/sólido baseado no scroll
+    // Header que some no scroll
     const header = document.querySelector('.header');
+    let lastScrollY = window.scrollY;
     
     function updateHeaderOnScroll() {
-        if (window.scrollY > 50) {
+        const currentScrollY = window.scrollY;
+        
+        // Header transparente/sólido baseado no scroll
+        if (currentScrollY > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
+        
+        // Header que some/aparece baseado na direção do scroll
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            // Scrolling down - hide header
+            header.classList.add('hidden');
+        } else {
+            // Scrolling up - show header
+            header.classList.remove('hidden');
+        }
+        
+        lastScrollY = currentScrollY;
     }
     
     window.addEventListener('scroll', updateHeaderOnScroll);
@@ -297,3 +312,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('PowerLine - Site carregado com sucesso! ⚡');
 });
+

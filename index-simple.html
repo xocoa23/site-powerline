@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerLine - Elétrica Inteligente</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+        
+        // Event tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // WhatsApp clicks
+            document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+                link.addEventListener('click', function() {
+                    gtag('event', 'whatsapp_click', {
+                        event_category: 'Contact',
+                        event_label: 'WhatsApp Button',
+                        value: 1
+                    });
+                });
+            });
+            
+            // Phone clicks
+            document.querySelectorAll('a[href*="tel:"]').forEach(link => {
+                link.addEventListener('click', function() {
+                    gtag('event', 'phone_click', {
+                        event_category: 'Contact',
+                        event_label: 'Phone Button',
+                        value: 1
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="images/powerline-logo.png" alt="PowerLine Logo" width="65" height="65">
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Soluções Profissionais em Energia Elétrica</h2>
+                <p>Especialistas em instalações industriais, manutenção preventiva e projetos elétricos de alta qualidade.</p>
+                <div class="hero-buttons">
+                    <a href="#servicos" class="btn btn-primary">Nossos Serviços</a>
+                    <a href="#contato" class="btn btn-secondary">Solicitar Orçamento</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/powerline-logo-fundoEscuro.png" alt="PowerLine - Serviços Elétricos" class="hero-main-image" loading="eager" decoding="async">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mais seções serão adicionadas aqui conforme desenvolvimento -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
