@@ -1,0 +1,48 @@
+# PowerLine - Arquivos a serem ignorados pelo Git
+
+# Configurações sensíveis
+.env
+config_local.php
+credentials.php
+
+# Documentação com dados sensíveis (apenas para uso local)
+CONFIGURACAO-SERVIDOR.md
+GUIA-BACKEND-COMPLETO.md
+SEGURANCA-URGENTE.md
+
+# Logs
+*.log
+contact_logs.txt
+
+# Arquivos temporários
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Dependências (se usar Composer futuramente)
+vendor/
+node_modules/
+
+# Arquivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos de backup
+*.bak
+*.backup
+*.lnk
+*~
+*- backup/
+
+# Arquivos de sistema
+.htaccess.bak
+.htpasswd
+
+# Cache
+cache/
+tmp/
+ 
+ INSTRUCOES-ENV.md

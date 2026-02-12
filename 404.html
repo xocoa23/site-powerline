@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página não encontrada - PowerLine</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="error-page">
+        <div class="container">
+            <div class="error-content">
+                <div class="error-icon">⚡</div>
+                <h1>404</h1>
+                <h2>Página não encontrada</h2>
+                <p>Ops! A página que você está procurando não existe ou foi movida.</p>
+                
+                <div class="error-actions">
+                    <a href="/" class="btn btn-primary">Voltar ao Início</a>
+                    <a href="https://wa.me/5500000000000?text=Olá! Estava procurando uma página no site da PowerLine mas não encontrei" class="btn btn-whatsapp" target="_blank">
+                        📱 Falar no WhatsApp
+                    </a>
+                </div>
+                
+                <div class="error-suggestions">
+                    <h3>Você pode estar procurando:</h3>
+                    <ul>
+                        <li><a href="/#servicos">Nossos Serviços</a></li>
+                        <li><a href="/#sobre">Sobre a PowerLine</a></li>
+                        <li><a href="/#contato">Entre em Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--primary-color) 100%);
+            color: var(--white);
+            text-align: center;
+            padding: var(--spacing-xl);
+        }
+
+        .error-content {
+            max-width: 600px;
+        }
+
+        .error-icon {
+            font-size: 4rem;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .error-content h1 {
+            font-size: 6rem;
+            font-weight: 900;
+            color: var(--accent-color);
+            margin-bottom: var(--spacing-md);
+            line-height: 1;
+        }
+
+        .error-content h2 {
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--spacing-lg);
+            color: var(--white);
+        }
+
+        .error-content p {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--spacing-2xl);
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .error-actions {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .error-suggestions {
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--spacing-xl);
+            border-radius: var(--border-radius-lg);
+            margin-top: var(--spacing-xl);
+        }
+
+        .error-suggestions h3 {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--spacing-md);
+            color: var(--accent-color);
+        }
+
+        .error-suggestions ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .error-suggestions li {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .error-suggestions a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .error-suggestions a:hover {
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .error-content h1 {
+                font-size: 4rem;
+            }
+
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</body>
+</html>

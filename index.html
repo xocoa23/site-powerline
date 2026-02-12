@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerLine - Elétrica Inteligente</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    
+    <!-- Google Analytics - Substituir G-XXXXXXXXXX pelo seu Measurement ID -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        // gtag('js', new Date());
+        // gtag('config', 'G-XXXXXXXXXX');
+        
+        // Event tracking
+        document.addEventListener('DOMContentLoaded', function() {
+            // WhatsApp clicks
+            document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+                link.addEventListener('click', function() {
+                    gtag('event', 'whatsapp_click', {
+                        event_category: 'Contact',
+                        event_label: 'WhatsApp Button',
+                        value: 1
+                    });
+                });
+            });
+            
+            // Phone clicks
+            document.querySelectorAll('a[href*="tel:"]').forEach(link => {
+                link.addEventListener('click', function() {
+                    gtag('event', 'phone_click', {
+                        event_category: 'Contact',
+                        event_label: 'Phone Button',
+                        value: 1
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="images/powerline-logo.png" alt="PowerLine Logo" width="65" height="65">
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Soluções Profissionais em Energia Elétrica</h2>
+                    <p>Especialistas em instalações residenciais e prediais, manutenção preventiva e projetos elétricos de alta qualidade.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5500000000000?text=Olá! Gostaria de entrar em contato com a PowerLine" class="btn btn-primary" target="_blank">Entre em Contato</a>
+                    <a href="#contato" class="btn btn-secondary">Solicitar Orçamento</a>
+                </div>
+            </div>
+                <div class="hero-image">
+                <img src="images/powerline-logo-fundoEscuro.png" alt="PowerLine - Serviços Elétricos" class="hero-main-image" loading="eager" decoding="async">
+                </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre a PowerLine -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-badge">
+                        <span>Sobre Nós</span>
+                    </div>
+                    <h2>Quem somos nós?</h2>
+                    <p class="about-lead">
+                        A PowerLine nasceu com o propósito de levar soluções elétricas seguras, rápidas e inteligentes para o seu dia a dia. Nossa missão é garantir que sua casa ou comercio funcione com a energia que você precisa, sem dor de cabeça.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-text">
+                                <h3>Experiência Comprovada</h3>
+                                <p>Anos de experiência em projetos elétricos residenciais e comerciais</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🛡️</div>
+                            <div class="feature-text">
+                                <h3>Segurança Garantida</h3>
+                                <p>Todos os serviços seguem rigorosamente as normas técnicas de segurança</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-text">
+                                <h3>Foco na Qualidade</h3>
+                                <p>Comprometimento com a excelência em cada projeto executado</p>
+            </div>
+                </div>
+                </div>
+            </div>
+                <div class="about-stats">
+                <div class="stats-grid">
+                        <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                            <div class="stat-label">Projetos Realizados</div>
+                    </div>
+                        <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                            <div class="stat-label">Clientes Satisfeitos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3 </div>
+                            <div class="stat-label">Meses dearantia</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos Realizados -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-badge">
+                    <span>Nosso Trabalho</span>
+                </div>
+                <h2>Projetos Realizados</h2>
+                <p class="section-lead">
+                    Confira alguns dos nossos trabalhos e a qualidade que entregamos em cada projeto
+                </p>
+            </div>
+            
+            <div class="projects-showcase">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projeto-residencial-1.jpg" alt="Instalação Residencial Completa" loading="lazy">
+            </div>
+                    <div class="project-info">
+                        <h3>Projeto Residencial</h3>
+                        <p>Instalação elétrica completa em residência de 200m², incluindo sistema de automação e iluminação inteligente.</p>
+                        <div class="project-tags">
+                            <span class="tag">Residencial</span>
+                            <span class="tag">Automação</span>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/estabelecimento-comercial.jpg" alt="Estabelecimento Comercial" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Estabelecimento Comercial</h3>
+                        <p>Modernização completa do sistema elétrico de loja comercial, com foco em eficiência energética.</p>
+                        <div class="project-tags">
+                            <span class="tag">Comercial</span>
+                            <span class="tag">Eficiência</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/manutencao-predial.jpg" alt="Manutenção Predial" loading="lazy">
+                        </div>
+                        <div class="project-info">
+                            <h3>Manutenção Predial</h3>
+                            <p>Serviço de manutenção preventiva em quadros elétricos prediais, garantindo segurança e continuidade.</p>
+                            <div class="project-tags">
+                                <span class="tag">Predial</span>
+                                <span class="tag">Manutenção</span>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/iluminacao-inteligente.jpg" alt="Iluminação Inteligente" loading="lazy">
+                </div>
+                    <div class="project-info">
+                        <h3>Iluminação Inteligente</h3>
+                        <p>Projeto de iluminação LED com sistema de automação para ambiente corporativo moderno.</p>
+                        <div class="project-tags">
+                            <span class="tag">LED</span>
+                            <span class="tag">Smart</span>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <!-- Seção Nossos Serviços -->
+    <section id="servicos" class="services-section">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-badge">
+                    <span>Nossos Serviços</span>
+                </div>
+                <h2>Soluções Elétricas Completas</h2>
+                <p class="section-lead">
+                    Oferecemos uma ampla gama de serviços elétricos para atender todas as suas necessidades
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚿</div>
+                    <h3>Chuveiros Elétricos</h3>
+                    <p>Instalação e reparo de chuveiros elétricos com total segurança. Diagnóstico rápido e garantido.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🔌</div>
+                    <h3>Tomadas e Interruptores</h3>
+                    <p>Instalação e troca de tomadas e interruptores. Soluções práticas para sua casa ou comércio.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3>Iluminação</h3>
+                    <p>Sistemas de iluminação LED, spots e luminárias. Deixe seus ambientes mais bonitos e eficientes.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Instalações Elétricas</h3>
+                    <p>Instalações elétricas residenciais e comerciais completas. Trabalho seguro e dentro das normas.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Manutenção</h3>
+                    <p>Manutenção preventiva e corretiva em sistemas elétricos. Evite problemas e garanta segurança.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção O que nossos clientes dizem -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-badge">
+                    <span>Depoimentos</span>
+            </div>
+                <h2>O que nossos clientes dizem</h2>
+                <p class="section-lead">
+                    Veja os comentários de quem confia na PowerLine para suas soluções elétricas
+                </p>
+        </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Chuveiro queimou e eles vieram resolver na mesma hora! Preço justo e serviço rápido. Super recomendo a PowerLine."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                        <strong>Ana Costa</strong>
+                            <span>Moradora - Batel</span>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Instalaram toda a parte elétrica da minha loja. Trabalho limpo, sem bagunça e entregaram no prazo combinado. Profissionais excelentes!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                        <strong>Roberto Lima</strong>
+                            <span>Comerciante - Boa Vista</span>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Problema na tomada da cozinha, vieram no mesmo dia. Explicaram tudo direitinho e cobraram honesto. Agora são meus eletricistas de confiança."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                        <strong>Mariana Silva</strong>
+                            <span>Moradora - Rebouças</span>
+                    </div>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Por que escolher a PowerLine -->
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-badge">
+                    <span>Nossos Diferenciais</span>
+                </div>
+                <h2>Por que escolher a PowerLine?</h2>
+                <p class="section-lead">
+                    Profissionalismo, agilidade e confiança. Porque energia é coisa séria!
+                </p>
+            </div>
+            
+            <div class="differentials-grid">
+                <div class="differential-card">
+                    <div class="differential-icon">🔧</div>
+                    <h3>Profissionalismo</h3>
+                    <p>Equipe qualificada e experiente em soluções elétricas. Trabalhamos com responsabilidade e dentro das normas técnicas.</p>
+                </div>
+                
+                <div class="differential-card">
+                    <div class="differential-icon">⚡</div>
+                    <h3>Agilidade</h3>
+                    <p>Diagnóstico rápido e garantido. Resolvemos seu problema elétrico de forma eficiente para você não ficar sem energia.</p>
+                </div>
+                
+                <div class="differential-card">
+                    <div class="differential-icon">✅</div>
+                    <h3>Confiança</h3>
+                    <p>Preço justo e atendimento de qualidade. Você merece um serviço confiável para manter sua rotina ligada.</p>
+                </div>
+                
+                <div class="differential-card">
+                    <div class="differential-icon">🛡️</div>
+                    <h3>Garantia Total</h3>
+                    <p>Todos os nossos serviços têm garantia. Trabalhamos com segurança e responsabilidade em cada projeto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Entre em Contato -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-badge">
+                    <span>Fale Conosco</span>
+                </div>
+                <h2>Entre em Contato</h2>
+                <p class="section-lead">
+                    Solicite seu orçamento ou tire suas dúvidas. Estamos prontos para ajudar!
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <strong>Telefone</strong>
+                                <p>(XX) XXXXX-XXXX</p>
+                            </div>
+                        </div>
+                        
+                    <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                            <strong>Email</strong>
+                            <p>seu-email@exemplo.com</p>
+                        </div>
+                    </div>
+                        
+                    <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <strong>Localização</strong>
+                            <p>Curitiba, PR - Brasil</p>
+                        </div>
+                    </div>
+                        
+                    <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-text">
+                                <strong>Horário</strong>
+                            <p>Segunda a Sexta: 8h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Solicitar Orçamento</h3>
+                    <form>
+                        <div class="form-row">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="servico">Serviço de Interesse</label>
+                            <select id="servico" name="servico" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="chuveiro">Chuveiro Elétrico</option>
+                                <option value="tomadas">Tomadas e Interruptores</option>
+                                <option value="iluminacao">Iluminação</option>
+                                <option value="instalacao">Instalação Elétrica</option>
+                                <option value="manutencao">Manutenção</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Descreva seu projeto</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte-nos sobre seu projeto ou problema elétrico..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            Enviar Solicitação
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="images/powerline-logo-dark.png" alt="PowerLine Logo" width="28" height="28">
+                        <span class="footer-brand">PowerLine</span>
+                        </div>
+                    </div>
+                
+                <div class="footer-center">
+                    <p class="footer-copyright">&copy; 2025 PowerLine. Todos os direitos reservados.</p>
+                </div>
+                
+                <div class="footer-right">
+                    <div class="footer-social">
+                        <a href="https://wa.me/5500000000000" target="_blank" aria-label="WhatsApp" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.488"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Email" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
