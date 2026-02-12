@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             })
             .catch(error => {
-                console.error('Erro:', error);
+                // Erro de rede ao enviar formulário
                 alert('❌ Erro ao enviar solicitação. Tente novamente ou entre em contato pelo WhatsApp.');
             })
             .finally(() => {
@@ -349,6 +349,6 @@ document.addEventListener('DOMContentLoaded', function() {
     preventHorizontalScroll();
     window.addEventListener('resize', preventHorizontalScroll);
     
-    console.log('PowerLine - Site carregado com sucesso! ⚡');
+    // Site carregado com sucesso
 });
 
